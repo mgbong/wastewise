@@ -25,46 +25,44 @@ public class loginform extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        ps = new javax.swing.JTextField();
+        em = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(245, 248, 224));
+        jPanel1.setBackground(new java.awt.Color(255, 174, 52));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(37, 107, 78));
+        jPanel2.setBackground(new java.awt.Color(62, 117, 223));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("PASSWORD:");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 670, 230, 20));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 110, 20));
 
         jLabel4.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("EMAIL:");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 590, 190, -1));
-        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 700, 460, 30));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 70, -1));
+        jPanel2.add(ps, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 340, 30));
 
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        em.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                emActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 610, 460, 30));
+        jPanel2.add(em, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 340, 30));
 
-        jLabel5.setFont(new java.awt.Font("French Script MT", 1, 48)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("French Script MT", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(245, 248, 224));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("User Login");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 500, 400, -1));
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 430, -1));
 
         jButton1.setBackground(new java.awt.Color(245, 248, 224));
         jButton1.setFont(new java.awt.Font("Cambria", 1, 16)); // NOI18N
@@ -79,7 +77,7 @@ public class loginform extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 760, 120, 30));
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 420, 120, 30));
 
         jButton2.setBackground(new java.awt.Color(204, 204, 204));
         jButton2.setFont(new java.awt.Font("Century", 0, 16)); // NOI18N
@@ -94,21 +92,14 @@ public class loginform extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 820, 340, 30));
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 480, 340, 30));
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Green Modern Nature Company Logo.png"))); // NOI18N
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 890, -1));
-
-        jLabel7.setFont(new java.awt.Font("Arial Black", 1, 70)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("WasteWise");
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 890, 150));
+        jLabel7.setText("PET CARE ESSENTIALS");
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 430, 150));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 0, 890, 1070));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Green and Cream Creative Duotone Sustainable Future Presentation.png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1730, 1070));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 0, 430, 700));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -118,35 +109,15 @@ public class loginform extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 696, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-    String email = jTextField2.getText().trim();
-
-    // Check if empty
-    if (email.isEmpty()) {
-        JOptionPane.showMessageDialog(this,"Email is required!", "Validation Error",JOptionPane.ERROR_MESSAGE);
-        jTextField2.requestFocus();
-        return;
-    }
-
-    // Email format pattern
-    String emailPattern = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
-
-    // Validate email format
-    if (!email.matches(emailPattern)) {
-        JOptionPane.showMessageDialog(this,"Please enter a valid email address!","Invalid Email",JOptionPane.ERROR_MESSAGE);
-        jTextField2.requestFocus();
-        return;
-    }
-
-    // If valid
-    JOptionPane.showMessageDialog(this,"Email is valid!",
-            "Success",JOptionPane.INFORMATION_MESSAGE);    }//GEN-LAST:event_jTextField2ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         registerform rf = new registerform();
@@ -154,86 +125,38 @@ public class loginform extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton2MouseClicked
 
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-    String email = jTextField2.getText().trim();
-    String password = jTextField1.getText().trim();
-    
-    System.out.println("=== LOGIN ATTEMPT ===");
-    System.out.println("Email: " + email);
-    
-    // Validate empty fields
-    if (email.isEmpty() || password.isEmpty()) {
-        JOptionPane.showMessageDialog(this, "Please enter both email and password!","Error",JOptionPane.ERROR_MESSAGE);
-        return;
-    }
-    
-    // Validate email format
-    String emailPattern = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
-    if (!email.matches(emailPattern)) {
-        JOptionPane.showMessageDialog(this,"Please enter a valid email address!","Invalid Email", JOptionPane.ERROR_MESSAGE);
-        jTextField2.requestFocus();
-        return;
-    }
-    
-    try {
-        config db = new config();
-        String sql = "SELECT * FROM users WHERE email = ? AND password = ?";
-        
-        System.out.println("Fetching user from database...");
-        
-        java.util.List<java.util.Map<String, Object>> records = db.fetchRecords(sql, email, password);
-        
-        // Check if any record was found
-        if (records != null && !records.isEmpty()) {
-            // Login successful - get user data from first record
-            java.util.Map<String, Object> user = records.get(0);
-            
-            int userId = (int) user.get("id");
-            String fullname = (String) user.get("fullname");
-            String userEmail = (String) user.get("email");
-            
-            System.out.println("Login successful!");
-            System.out.println("User ID: " + userId);
-            System.out.println("Fullname: " + fullname);
-            System.out.println("Email: " + userEmail);
-            
-            JOptionPane.showMessageDialog(this,"Welcome to WasteWise, " + fullname + "!", "Login Successful",JOptionPane.INFORMATION_MESSAGE);
-            
-            // Clear the fields
-            jTextField1.setText("");
-            jTextField2.setText("");
-            
-            // TODO: Open your dashboard or main form here
-            // Example:
-            // dashboard d = new dashboard(userId, fullname);
-            // d.setVisible(true);
-            // this.dispose();
-            
-        } else {
-            // Login failed - no matching record found
-            System.out.println("Login failed: No matching user found");
-            
-            JOptionPane.showMessageDialog(this,"Invalid email or password!\nPlease check your credentials or sign up for a new account.","Login Failed", 
-                JOptionPane.ERROR_MESSAGE);
-            
-            jTextField1.setText("");  // Clear password field
-            jTextField2.requestFocus();
-        }
-        
-    } catch (Exception e) {
-        System.out.println("Login error: " + e.getMessage());
-        JOptionPane.showMessageDialog(this,"Error during login: " + e.getMessage(),"Error", JOptionPane.ERROR_MESSAGE);
-        e.printStackTrace();
-    }
-    }//GEN-LAST:event_jButton1MouseClicked
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+            
+            config con = new config();
+            String sql = "SELECT * FROM users WHERE email = ? AND password =? AND status=?";
+            
+            String userType = con.authenticate (sql, em.getText(), ps.getText(), "Active");
+            if (userType != null){
+            
+            if (userType.equals("Admin")){
+                admindashboard ad = new admindashboard ();
+                ad.setVisible (true);
+                this.dispose();
+            }else if (userType.equals ("User")){
+                userDashboard ud = new userDashboard();
+                
+                
+            }
+            }else{
+                JOptionPane.showMessageDialog(null, "INVALID ACCOUNT TYPE!");
+                
+            }
+           
+            
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void emActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emActionPerformed
+    
+    }//GEN-LAST:event_emActionPerformed
 
     /**
      * @param args the command line arguments
@@ -247,17 +170,15 @@ public class loginform extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField em;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField ps;
     // End of variables declaration//GEN-END:variables
 }
